@@ -15,8 +15,10 @@
  [21.09.10 : html,css작업 및 DB 모델링 추가 회의 및 자료검색 및 오류검사](#210910) <br>
  [21.09.11 : html,css마무리](#210911) <br>
  [21.09.12 : html,css마무리](#210912) <br>
+ [21.09.13 : DB작업 및 STS프로젝트 생성 ](#210913) <br>
+ [21.09.14 : DB생성 및 마이바티스연동 후 작업나누기](#210914) <br>
  
-#21.08.31
+# 21.08.31
 첫 팀회의 진행(비대면) <br>
 참가자 : 김환서, 문예리, 신민주, 신수진, 이희재, 한민호<br>
 ## **회의주제** : 주제 정하기
@@ -37,7 +39,7 @@
 [▲맨위로](#wefit)
 
 
-#21.09.01
+# 21.09.01
 두 번째 팀회의 진행(비대면) <br>
 참가자 : 김환서, 문예리, 신민주, 신수진, 이희재, 한민호<br>
 ## 회의주제 : 메뉴 및 기능, UI크기회의
@@ -192,7 +194,7 @@
     - 발표준비      09/28~10/02
 [▲맨위로](#wefit)
 
-#21.09.03
+# 21.09.03
 HTML, CSS 작업하기 <br>
 ## 작업하면서 문제점
  - 깃사용법이 익숙하지 않아 동기화가 제대로 이루어지지 않음 
@@ -219,6 +221,7 @@ HTML, CSS 작업하기 <br>
   - 뼈대 구성
 
 [▲맨위로](#wefit)
+
 # 21.09.06
   HTML,CSS 작업하기
   
@@ -228,7 +231,8 @@ HTML, CSS 작업하기 <br>
     - vsc를 clone한 폴더로 열기
     - 부트스트랩 버전 5에서 다시 3으로 낮춤
 [▲맨위로](#wefit)
-## 21.09.07
+
+# 21.09.07
   HTML,CSS 작업하기 <br>
 ### 작업 내용
   - 김환서
@@ -260,7 +264,8 @@ HTML, CSS 작업하기 <br>
   - 전체 레이아웃 변경
   - 
 [▲맨위로](#wefit)
-## 21.09.08
+
+# 21.09.08
   HTML,CSS 작업하기 <br>
   - 레이아웃 변경 
   ![변경된 전체 레이아웃](https://user-images.githubusercontent.com/87509186/132431777-2f6c9603-7030-4ff7-9fbc-d126ddddd93f.png)
@@ -290,7 +295,7 @@ HTML, CSS 작업하기 <br>
 
 [▲맨위로](#wefit)
 
-## 21.09.09
+# 21.09.09
   HTML,CSS 작업하기 <br>
    - 김환서
       - 헤더 부분 오류 ▶ 전면 수정
@@ -352,7 +357,7 @@ HTML, CSS 작업하기 <br>
 
 [▲맨위로](#wefit)
 
-## 21.09.10
+# 21.09.10
 ### HTML,CSS 작업하기 <br>
   - 한민호 - 메인페이지 작업
   - 신수진 - 비밀번호 변경페이지 작업
@@ -448,13 +453,14 @@ HTML, CSS 작업하기 <br>
 
 [▲맨위로](#wefit)
 
-## 21.09.11
+# 21.09.11
 ### HTML,CSS 마무리 작업하기 <br>
 - 김환서
   - 게시글 보기 페이지 작업
 
 [▲맨위로](#wefit)
-## 21.09.12
+
+# 21.09.12
 ### HTML,CSS 마무리 작업하기 <br>
 - 김환서
   - 게시글 보기 페이지 수정 작업
@@ -495,13 +501,18 @@ HTML, CSS 작업하기 <br>
  
 [▲맨위로](#wefit)
 
-회원테이블 랜덤값 추가
+
+
+
+# 21.09.13
+DB작업 및 STS프로젝트 생성 <br>
+
+회원테이블 랜덤값 추가(메일보낼때 인증할 값)
 좋아요, 신고 테이블 추가(이메일, 게시판종류, 게시글 번호)
 
-
-각 테이블 컬럼에 필수값여부,데이터 얼마나 들어갈지 정리
+각 테이블 컬럼에 필수값여부, 데이터 얼마나 들어갈지 정리
 신민주
-  - 자유, 질문, 공지`
+  - 자유, 질문, 공지
 한민호
   - 유저, 식단
 
@@ -513,5 +524,589 @@ HTML, CSS 작업하기 <br>
 
 문예리
   - 좋아요, 장소
+
 김환서
   - 관리자
+
+DB를 합칠까 생각함(코드로 테이블 구분...)
+
+STS프로젝트 생성 후 연동 테스트 쭉 해봄
+- 스프링 한글처리
+[▲맨위로](#wefit)
+
+# 21.09.14
+DB생성 및 마이바티스연동 후 작업나누기 <br>
+
+## 오전회의 : STS동기화가 잘 되는지 확인 및 DB테이블 생성문 회의
+### 참가자 : 전체
+- 팀장이 커밋을 하고서 나머지 팀원들이 pull을 받았을때 변경이 잘 적용됬는지 확인
+- DB테이블 생성문 만들기 전 테이블 합칠까 말까 투표
+  - 합침 - 테이블이 적어짐, 문제가 터졌을 때 전체가 문제가 됨
+  - 나눔 - 테이블이 많아짐, 문제가 터졌을 때 그 테이블만 보면 됨
+- 회의 결과 나누는 쪽으로 결정
+
+- 테이블 생성문을 나눠드리고 질문 받기
+  - Q:게시판에 ImageCount컬럼은 뭔가요?
+  - A:게시판 목록에 보여줄 사진 개수입니다.
+  - Q:장소에 starScore는 뭔가요?
+  - A:나중에 별점을 추가할 수 도 있을것 같아 추가했습니다.
+  - Q:좋아요와 신고 테이블에서 bNum과 mNum만 있는데 몇개를 받았는지 어떻게 알 수 있나요
+  - A:게시판과 좋아요, 신고를 다 조인한 후에 각 게시판(bNum)으로 select count(*) as 신고수 From 신고테이블하면 될 것같아요
+  - Q:유저테이블에서 HumanYN, ManagerYN이 뭔지 모르겠어요
+  - A:휴먼계정여부, 관리자계정여부 확인컬럼입니다.
+  - Q:강의게시판에서 관리자번호도 mNum인거죠?
+  - A:아뇨 mNum은 그냥 회원번호이고 managerYN이 Yes인 컬럼만 강의,
+  공지사항 게시판 작성권한을 줄 생각입니다.
+  - Q:그럼 강의 게시판에는 관리자를 판단할 컬럼을 추가하지 않아도 되나요?
+  - A:네 추가하지 않아도 됩니다.
+  - ※ 회원테이블에 컬럼 3개 추가함
+    - mDelDate 
+      - 회원탈퇴를 진행하고 바로 삭제하지 않고 1주일정도 여유를 두고 삭제계획
+    - sessionId, autoLoginLimit : 자동로그인을 하기 위해 추가
+  - Q:혹시 1주일을 홀딩하는 이유가 있나요?
+  - A:혹시라도 잘못탈퇴를 진행하거나 문제가 있을때 바로 삭제해버리면 복구를 할 수가 없기 때문에 홀딩했습니다.
+  - ※ image컬럼에 realimage추가
+    - image : 서버에는 랜덤문자로 이름을 지정
+    - realimage : 사용자가 보기에는 저장했던 이름으로 표기할 수 있도록 함
+  - Q:장소에는 price컬럼은 무엇인가요? 시설이용료인가요?
+  - A:잘못추가했습니다 삭제할게요;;
+  - ※ 이미지저장경로
+    - 프로젝트/resources/upload/게시판/사용자/게시글/이미지들
+    - 이런식으로 저장할 계획입니다.
+    - 아무래도 맥을 사용하시는 분이랑 윈도우사용하시는 분이 계셔서
+    - 윈도우 위주로 작업을 하면 맥쪽에서 오류가 나기 때문에 프로젝트 기준으로 잡았습니다.
+  - ※ 주소부분에 basic, 위도, 경도만 쓴이유
+    - basic은 목록에서 select 검색을 할 때 필요할 것 같아 남겨뒀었고
+    - 위도랑 경도는 거리별 정렬할 때 필요하고 
+    - 위도와 경도까지 있으면 상세주소까지 얻어낼 수 있어서 남겨놨습니다.
+
+  
+### 테이블 및 시퀀스 생성문
+--공지사항 시작
+CREATE TABLE NoticeBoard
+(
+    nbNum            NUMBER(10, 0)     NOT NULL, 
+    mNum            NUMBER(20, 0)     NOT NULL, 
+    nbTitle          VARCHAR2(200)     NOT NULL, 
+    nbContent        VARCHAR2(2000), 
+    nbImage1         VARCHAR2(50)  , 
+    nbRealImage1     VARCHAR2(50)  , 
+    nbLookCount      NUMBER(20,0)      DEFAULT 0 NOT NULL, 
+    nbImageCount     NUMBER(2,0)       NOT NULL, 
+    nbRegDate        DATE              DEFAULT SYSDATE NOT NULL, 
+    CONSTRAINT PK_NoticeBoard PRIMARY KEY (nbNum)
+);
+
+CREATE TABLE NoticeReply
+(
+    nrNum        NUMBER(10, 0)    NOT NULL, 
+    nbNum        NUMBER(10, 0)    NOT NULL, 
+    nrContent    VARCHAR2(200)    NOT NULL, 
+    mNum        NUMBER(20, 0)    NOT NULL,
+    nrRegDate    DATE             DEFAULT SYSDATE NOT NULL, 
+    CONSTRAINT PK_NoticeReply PRIMARY KEY (nrNum)
+);
+
+CREATE TABLE NoticeLikely
+(
+    nbNum    NUMBER(10, 0)    NOT NULL, 
+    mNum    NUMBER(20, 0)    NOT NULL
+); 
+
+CREATE TABLE NoticeReport
+(
+    nbNum    NUMBER(10, 0)    NOT NULL, 
+    mNum    NUMBER(20, 0)    NOT NULL
+); 
+
+CREATE SEQUENCE noticeBoard_seq 
+    START WITH 1 
+    INCREMENT BY 1 
+    MAXVALUE 10000000 
+    NOCYCLE 
+    NOCACHE; 
+
+CREATE SEQUENCE noticeReply_seq 
+    START WITH 1 
+    INCREMENT BY 1 
+    MAXVALUE 10000000
+    NOCYCLE 
+    NOCACHE;
+
+--공지사항 끝
+
+-- 장터 시작
+CREATE TABLE MarketBoard
+(
+    mbNum            NUMBER(10, 0)     NOT NULL, 
+    mNum            NUMBER(20, 0)     NOT NULL, 
+    mbType           VARCHAR2(6)       NOT NULL, 
+    mbTitle          VARCHAR2(200)     NOT NULL, 
+    mbPrice          NUMBER(10, 0)     NOT NULL, 
+    mbContent        VARCHAR2(2000), 
+    mbImage1         VARCHAR2(50)  , 
+    mbImage2         VARCHAR2(50)  , 
+    mbImage3         VARCHAR2(50)  , 
+    mbImage4         VARCHAR2(50)  , 
+    mbImage5         VARCHAR2(50)  , 
+    mbImage6         VARCHAR2(50)  , 
+    mbImage7         VARCHAR2(50)  , 
+    mbImage8         VARCHAR2(50)  , 
+    mbImage9         VARCHAR2(50)  , 
+    mbImage10        VARCHAR2(50)  , 
+    mbRealImage1     VARCHAR2(50)  , 
+    mbRealImage2     VARCHAR2(50)  , 
+    mbRealImage3     VARCHAR2(50)  , 
+    mbRealImage4     VARCHAR2(50)  , 
+    mbRealImage5     VARCHAR2(50)  , 
+    mbRealImage6     VARCHAR2(50)  , 
+    mbRealImage7     VARCHAR2(50)  , 
+    mbRealImage8     VARCHAR2(50)  , 
+    mbRealImage9     VARCHAR2(50)  , 
+    mbRealImage10    VARCHAR2(50)  , 
+    mbAddrBasic      VARCHAR(300)      NOT NULL, 
+    mbLatitude       NUMBER(9, 6)      NOT NULL, 
+    mbLongitude      NUMBER(9, 6)      NOT NULL, 
+    mbLookCount      NUMBER(20,0)      DEFAULT 0 NOT NULL, 
+    mbImageCount     NUMBER(2,0)       NOT NULL, 
+    mbRegDate        DATE              DEFAULT SYSDATE NOT NULL, 
+    CONSTRAINT PK_MarketBoard PRIMARY KEY (mbNum)
+);
+
+CREATE TABLE MarketReply
+(
+    mrNum        NUMBER(10, 0)    NOT NULL, 
+    mbNum        NUMBER(10, 0)    NOT NULL, 
+    mrContent    VARCHAR2(200)    NOT NULL, 
+    mNum        NUMBER(20, 0)    NOT NULL,
+    starScore   NUMBER(2,1),
+    mrRegDate    DATE             DEFAULT SYSDATE NOT NULL, 
+    CONSTRAINT PK_MarketReply PRIMARY KEY (mrNum)
+);
+
+CREATE TABLE MarketLikely
+(
+    mbNum    NUMBER(10, 0)    NOT NULL, 
+    mNum    NUMBER(20, 0)    NOT NULL
+); 
+
+CREATE TABLE MarketReport
+(
+    mbNum    NUMBER(10, 0)    NOT NULL, 
+    mNum    NUMBER(20, 0)    NOT NULL
+); 
+
+CREATE SEQUENCE marketBoard_seq 
+    START WITH 1 
+    INCREMENT BY 1 
+    MAXVALUE 10000000 
+    NOCYCLE 
+    NOCACHE; 
+
+CREATE SEQUENCE marketReply_seq 
+    START WITH 1 
+    INCREMENT BY 1 
+    MAXVALUE 10000000
+    NOCYCLE 
+    NOCACHE;
+
+-- 장터 끝
+
+-- 장소 시작
+CREATE TABLE PlaceBoard
+(
+    pbNum            NUMBER(10, 0)     NOT NULL, 
+    mNum            NUMBER(20, 0)     NOT NULL, 
+    pbTitle          VARCHAR2(200)     NOT NULL, 
+    pbContent        VARCHAR2(2000), 
+    pbImage1         VARCHAR2(50)  , 
+    pbImage2         VARCHAR2(50)  , 
+    pbImage3         VARCHAR2(50)  , 
+    pbImage4         VARCHAR2(50)  , 
+    pbImage5         VARCHAR2(50)  , 
+    pbRealImage1     VARCHAR2(50)  , 
+    pbRealImage2     VARCHAR2(50)  , 
+    pbRealImage3     VARCHAR2(50)  , 
+    pbRealImage4     VARCHAR2(50)  , 
+    pbRealImage5     VARCHAR2(50)  , 
+    pbCategory      VARCHAR(20)      NOT NULL, 
+    pbAddrBasic      VARCHAR(300)      NOT NULL, 
+    pbLatitude       NUMBER(9, 6)      NOT NULL, 
+    pbLongitude      NUMBER(9, 6)      NOT NULL, 
+    pbLookCount      NUMBER(20,0)      DEFAULT 0 NOT NULL, 
+    pbImageCount     NUMBER(2,0)       NOT NULL, 
+    pbRegDate        DATE              DEFAULT SYSDATE NOT NULL, 
+    CONSTRAINT PK_PlaceBoard PRIMARY KEY (pbNum)
+);
+
+CREATE TABLE PlaceReply
+(
+    prNum        NUMBER(10, 0)    NOT NULL, 
+    pbNum        NUMBER(10, 0)    NOT NULL, 
+    prContent    VARCHAR2(200)    NOT NULL, 
+    mNum        NUMBER(20, 0)    NOT NULL,
+    starScore   NUMBER(2,1),
+    prRegDate    DATE             DEFAULT SYSDATE NOT NULL, 
+    CONSTRAINT PK_PlaceReply PRIMARY KEY (prNum)
+);
+
+CREATE TABLE PlaceLikely
+(
+    pbNum    NUMBER(10, 0)    NOT NULL, 
+    mNum    NUMBER(20, 0)    NOT NULL
+); 
+
+CREATE TABLE PlaceReport
+(
+    pbNum    NUMBER(10, 0)    NOT NULL, 
+    mNum    NUMBER(20, 0)    NOT NULL
+); 
+
+CREATE SEQUENCE placeBoard_seq 
+    START WITH 1 
+    INCREMENT BY 1 
+    MAXVALUE 10000000 
+    NOCYCLE 
+    NOCACHE; 
+
+CREATE SEQUENCE placeReply_seq 
+    START WITH 1 
+    INCREMENT BY 1 
+    MAXVALUE 10000000
+    NOCYCLE 
+    NOCACHE;
+-- 장소 끝
+
+-- 강의 시작
+CREATE TABLE CourseBoard
+(
+    cbNum            NUMBER(10, 0)     NOT NULL, 
+    mNum            NUMBER(20, 0)     NOT NULL, 
+    cbTitle          VARCHAR2(200)     NOT NULL, 
+    cbContent        VARCHAR2(2000), 
+    cbYouCode      VARCHAR(50)      NOT NULL, 
+    cbCategory      VARCHAR(20)      NOT NULL, 
+    cbLookCount      NUMBER(20,0)      DEFAULT 0 NOT NULL, 
+    cbRegDate        DATE              DEFAULT SYSDATE NOT NULL, 
+    CONSTRAINT PK_CourseBoard PRIMARY KEY (cbNum)
+);
+
+CREATE TABLE CourseReply
+(
+    crNum        NUMBER(10, 0)    NOT NULL, 
+    cbNum        NUMBER(10, 0)    NOT NULL, 
+    crContent    VARCHAR2(200)    NOT NULL, 
+    mNum        NUMBER(20, 0)    NOT NULL,
+    crRegDate    DATE             DEFAULT SYSDATE NOT NULL, 
+    CONSTRAINT PK_CourseReply PRIMARY KEY (crNum)
+);
+
+CREATE TABLE CourseLikely
+(
+    cbNum    NUMBER(10, 0)    NOT NULL, 
+    mNum    NUMBER(20, 0)    NOT NULL
+); 
+
+CREATE TABLE CourseReport
+(
+    cbNum    NUMBER(10, 0)    NOT NULL, 
+    mNum    NUMBER(20, 0)    NOT NULL
+); 
+
+CREATE SEQUENCE courseBoard_seq 
+    START WITH 1 
+    INCREMENT BY 1 
+    MAXVALUE 10000000 
+    NOCYCLE 
+    NOCACHE; 
+
+CREATE SEQUENCE courseReply_seq 
+    START WITH 1 
+    INCREMENT BY 1 
+    MAXVALUE 10000000
+    NOCYCLE 
+    NOCACHE;
+-- 강의 끝
+
+-- 식단 시작
+CREATE TABLE DietBoard
+(
+    dbNum            NUMBER(10, 0)     NOT NULL, 
+    mNum            NUMBER(20, 0)     NOT NULL, 
+    dbTitle          VARCHAR2(200)     NOT NULL, 
+    dbContent        VARCHAR2(2000), 
+    dbImage1         VARCHAR2(50)  , 
+    dbImage2         VARCHAR2(50)  , 
+    dbImage3         VARCHAR2(50)  , 
+    dbImage4         VARCHAR2(50)  , 
+    dbImage5         VARCHAR2(50)  , 
+    dbRealImage1     VARCHAR2(50)  , 
+    dbRealImage2     VARCHAR2(50)  , 
+    dbRealImage3     VARCHAR2(50)  , 
+    dbRealImage4     VARCHAR2(50)  , 
+    dbRealImage5     VARCHAR2(50)  , 
+    dbLookCount      NUMBER(20,0)      DEFAULT 0 NOT NULL, 
+    dbImageCount     NUMBER(2,0)       NOT NULL, 
+    dbRegDate        DATE              DEFAULT SYSDATE NOT NULL, 
+    CONSTRAINT PK_DietBoard PRIMARY KEY (dbNum)
+);
+
+CREATE TABLE DietReply
+(
+    drNum        NUMBER(10, 0)    NOT NULL, 
+    dbNum        NUMBER(10, 0)    NOT NULL, 
+    drContent    VARCHAR2(200)    NOT NULL, 
+    mNum        NUMBER(20, 0)    NOT NULL,
+    starScore   NUMBER(2,1),
+    drRegDate    DATE             DEFAULT SYSDATE NOT NULL, 
+    CONSTRAINT PK_DietReply PRIMARY KEY (drNum)
+);
+
+CREATE TABLE DietLikely
+(
+    dbNum    NUMBER(10, 0)    NOT NULL, 
+    mNum    NUMBER(20, 0)    NOT NULL
+); 
+
+CREATE TABLE DietReport
+(
+    dbNum    NUMBER(10, 0)    NOT NULL, 
+    mNum    NUMBER(20, 0)    NOT NULL
+); 
+
+CREATE SEQUENCE dietBoard_seq 
+    START WITH 1 
+    INCREMENT BY 1 
+    MAXVALUE 10000000 
+    NOCYCLE 
+    NOCACHE; 
+
+CREATE SEQUENCE dietReply_seq 
+    START WITH 1 
+    INCREMENT BY 1 
+    MAXVALUE 10000000
+    NOCYCLE 
+    NOCACHE;
+-- 식단 끝
+
+-- 자유 시작
+CREATE TABLE FreeBoard
+(
+    fbNum            NUMBER(10, 0)     NOT NULL, 
+    mNum            NUMBER(20, 0)     NOT NULL, 
+    fbTitle          VARCHAR2(200)     NOT NULL, 
+    fbContent        VARCHAR2(2000),
+    fbImage1         VARCHAR2(50)  , 
+    fbImage2         VARCHAR2(50)  , 
+    fbImage3         VARCHAR2(50)  , 
+    fbImage4         VARCHAR2(50)  , 
+    fbImage5         VARCHAR2(50)  , 
+    fbRealImage1     VARCHAR2(50)  , 
+    fbRealImage2     VARCHAR2(50)  , 
+    fbRealImage3     VARCHAR2(50)  , 
+    fbRealImage4     VARCHAR2(50)  , 
+    fbRealImage5     VARCHAR2(50)  , 
+    fbLookCount      NUMBER(20,0)      DEFAULT 0 NOT NULL, 
+    fbImageCount     NUMBER(2,0)       NOT NULL, 
+    fbRegDate        DATE              DEFAULT SYSDATE NOT NULL, 
+    CONSTRAINT PK_FreeBoard PRIMARY KEY (fbNum)
+);
+
+CREATE TABLE FreeReply
+(
+    frNum        NUMBER(10, 0)    NOT NULL, 
+    bNum        NUMBER(10, 0)    NOT NULL, 
+    frContent    VARCHAR2(200)    NOT NULL, 
+    mNum        NUMBER(20, 0)    NOT NULL,
+    frRegDate    DATE             DEFAULT SYSDATE NOT NULL, 
+    CONSTRAINT PK_FreeReply PRIMARY KEY (frNum)
+);
+
+CREATE TABLE FreeLikely
+(
+    fbNum    NUMBER(10, 0)    NOT NULL, 
+    mNum    NUMBER(20, 0)    NOT NULL
+); 
+
+CREATE TABLE FreeReport
+(
+    fbNum    NUMBER(10, 0)    NOT NULL, 
+    mNum    NUMBER(20, 0)    NOT NULL
+); 
+
+CREATE SEQUENCE FreeBoard_seq 
+    START WITH 1 
+    INCREMENT BY 1 
+    MAXVALUE 10000000 
+    NOCYCLE 
+    NOCACHE; 
+
+CREATE SEQUENCE FreeReply_seq 
+    START WITH 1 
+    INCREMENT BY 1 
+    MAXVALUE 10000000
+    NOCYCLE 
+    NOCACHE;
+
+-- 자유 끝
+
+-- 질문 시작
+CREATE TABLE QuesBoard
+(
+    qbNum            NUMBER(10, 0)     NOT NULL,  
+    mNum            NUMBER(20, 0)     NOT NULL, 
+    qbType           VARCHAR2(6)       NOT NULL, 
+    qbTitle          VARCHAR2(200)     NOT NULL, 
+    qbContent        VARCHAR2(2000), 
+    qbCategory      VARCHAR(20)      NOT NULL, 
+    qbImage1         VARCHAR2(50)  , 
+    qbImage2         VARCHAR2(50)  , 
+    qbImage3         VARCHAR2(50)  , 
+    qbImage4         VARCHAR2(50)  , 
+    qbImage5         VARCHAR2(50)  , 
+    qbRealImage1     VARCHAR2(50)  , 
+    qbRealImage2     VARCHAR2(50)  , 
+    qbRealImage3     VARCHAR2(50)  , 
+    qbRealImage4     VARCHAR2(50)  , 
+    qbRealImage5     VARCHAR2(50)  , 
+    qbLookCount      NUMBER(20,0)      DEFAULT 0 NOT NULL, 
+    qbImageCount     NUMBER(2,0)       NOT NULL, 
+    qbRegDate        DATE              DEFAULT SYSDATE NOT NULL, 
+    CONSTRAINT PK_QuesBoard PRIMARY KEY (qbNum)
+);
+
+CREATE TABLE QuesReply
+(
+    qrNum        NUMBER(10, 0)    NOT NULL, 
+    qbNum        NUMBER(10, 0)    NOT NULL, 
+    qrContent    VARCHAR2(200)    NOT NULL, 
+    mNum        NUMBER(20, 0)    NOT NULL,
+    qrRegDate    DATE             DEFAULT SYSDATE NOT NULL, 
+    CONSTRAINT PK_QuesReply PRIMARY KEY (qrNum)
+);
+
+CREATE TABLE QuesLikely
+(
+    qbNum    NUMBER(10, 0)    NOT NULL, 
+    mNum    NUMBER(20, 0)    NOT NULL
+); 
+
+CREATE TABLE QuesReport
+(
+    qbNum    NUMBER(10, 0)    NOT NULL, 
+    mNum    NUMBER(20, 0)    NOT NULL
+); 
+
+CREATE SEQUENCE QuesBoard_seq 
+    START WITH 1 
+    INCREMENT BY 1 
+    MAXVALUE 10000000 
+    NOCYCLE 
+    NOCACHE; 
+
+CREATE SEQUENCE QuesReply_seq 
+    START WITH 1 
+    INCREMENT BY 1 
+    MAXVALUE 10000000
+    NOCYCLE 
+    NOCACHE;
+-- 질문 끝
+
+CREATE TABLE Member
+(
+    mNum           NUMBER(20, 0)    NOT NULL, 
+    mEmail         VARCHAR2(30)     NOT NULL, 
+    mNick          VARCHAR2(30)     NOT NULL, 
+    mPasswd        VARCHAR2(100)    NOT NULL, 
+    mPhone         VARCHAR2(30), 
+    mRegistDate    DATE             DEFAULT sysdate NOT NULL, 
+    mConnDate      DATE             DEFAULT sysdate NOT NULL, 
+    mHumanYN       VARCHAR2(10)     NOT NULL, 
+    mLatitude      NUMBER(9, 6), 
+    mLongitude     NUMBER(9, 6), 
+    mEmailYN       VARCHAR2(10)     NOT NULL, 
+    mCode          VARCHAR2(20)     NOT NULL, 
+    mManagerYN     VARCHAR2(10)     DEFAULT 'NO' NOT NULL, 
+    mDelDate       DATE,
+    sessionId      VARCHAR2(80)     DEFAULT 'none' NOT NULL,
+    autoLoginLimit DATE,
+    CONSTRAINT PK_Member PRIMARY KEY (mNum)
+);
+
+CREATE SEQUENCE member_seq 
+    START WITH 1 
+    INCREMENT BY 1 
+    MAXVALUE 10000000
+    NOCYCLE 
+    NOCACHE;
+
+
+### 프로시져 생성문
+create or replace FUNCTION RADIANS(nDegrees IN NUMBER) 
+RETURN NUMBER DETERMINISTIC 
+IS
+BEGIN
+  /*
+  -- radians = degrees / (180 / pi)
+  -- RETURN nDegrees / (180 / ACOS(-1)); but 180/pi is a constant, so...
+  */
+  RETURN nDegrees / 57.29577951308232087679815481410517033235;
+END RADIANS;
+
+create or replace FUNCTION DISTANCE_WGS84(H_LAT IN NUMBER, H_LOT IN NUMBER, T_LAT IN NUMBER, T_LOT IN NUMBER)
+RETURN NUMBER DETERMINISTIC
+IS
+BEGIN
+  RETURN ( 6371.0 * ACOS(
+    LEAST(1,
+     COS( RADIANS(H_LAT) ) * COS( RADIANS(T_LAT) )
+     * COS(RADIANS(T_LOT) - RADIANS(H_LOT) )
+     + SIN( RADIANS (H_LAT) ) * SIN(RADIANS( T_LAT) )                                    
+    )
+  ));
+END;
+[▲맨위로](#wefit)
+
+
+
+
+
+
+## 오후
+
+### DB연동 작업
+1. web.xml에 ContextConfigLocation변경
+  - /WEB-INF/spring/root-context.xml -> /WEB-INF/config/db-config.xml
+  - /WEB-INF/spring/appServlet/servlet-context.xml -> /WEB-INF/config/servlet-config.xml
+2. web.xml에 변경한 내용대로 파일명과 위치 이동
+3. db-config.xml
+  1. DB설정파일 빈등록 해주기
+  2. 히카리 설정 불러오는 빈 등록해주기
+  3. 불러온 DB정보를 데이터소스 객체에 주입해주는 빈 등록
+  4. 마이바티스 연결 객체 빈 등록
+  5. 마이바티스 스캔 명령작성 -> 스캔명령은 빈등록 바깥쪽에 작성
+4. ITestMapper.java(인터페이스) 생성
+5. TestDB.xml생성
+6. ConnectionTest.java생성후 테스트
+### 작업나누기
+- 우선 하나씩 맡아서 진행
+  - 김환서 - 회원
+  - 문예리 - 장소
+  - 신민주 - 
+  - 신수진 - 강의
+  - 이희재 - 장터
+  - 한민호 - 식단
+
+command -> vo객체
+board -> mapper -> imapper
+board ->service -> iservice, service
+
+
+### 
+
+# 21.09.13
+복사할 블록입니다. <br>
+
+
+[▲맨위로](#wefit)
+
