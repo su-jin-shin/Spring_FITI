@@ -7,5 +7,18 @@
 
 
 
+<insert id="regist">
+	INSERT INTO CourseBoard (cbNum, mNum, cbTitle, cbContent, cbYouCode, cbCategory)
+	VALUES (courseBoard_seq.NEXTVAL, #{mNum}, #{cbTitle}, #{cbContent}, #{cbYouCode}, #{cbCategory})
+</insert>
+
+
+<select id="getList" resultType="com.spring.wefit.course.command.CourseBoardVO">
+	SELECT * FROM CourseBoard
+	ORDER BY cbNum DESC
+</select>
+
+
+
 
 </mapper>

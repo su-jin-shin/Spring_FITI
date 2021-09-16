@@ -37,7 +37,10 @@
 
 		<!-- 마이바티스 같은 경우는 mapper 구현체를 xml로 대체하니까 해당 구현체 xml의 경로를 알려줘야 한다. -->
 		<property name="mapperLocations"
-			value="classpath:/mappers/*.xml" /> 	
+			value="classpath:/mappers/course/*.xml" /> 	
+		
+		<property name="configLocation"
+			value="classpath:/db-config/mybatis-config.xml" /> 	
 			
 	</bean>
 	
