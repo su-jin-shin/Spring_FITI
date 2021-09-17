@@ -3,6 +3,7 @@
     pageEncoding="UTF-8"%>
     
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/functions" prefix="fn" %>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -76,6 +77,7 @@
             /* border: 1px solid #fff; */
             background: #fff;
             padding: 10px;
+            cursor: pointer;
         }
 
 
@@ -196,34 +198,41 @@
 
 
         <div class="row margin-top-5">
-            <!-- <table class="table table-hover table-responsive"> -->
+
             <table class="table">
-                <!-- <thead class="bg-info">
-                    <tr>       
-                        <th scope="col" class="text-center">제목</th>
-                        <th scope="col" class="text-center">글쓴이</th>
-                        <th scope="col" class="text-center">날짜</th>                      
-                    </tr>
-                </thead> -->
+
                 <tbody>
-                    <tr class="course">  
-                    	<c:forEach var="vo" begin="1" end="3" items="${courseList}">                                   
-<%-- 		                	<c:forEach begin="1" end="3"> --%>
-		                        <td scope="col" class="text-center">
-		                            <div class="vid">                               
-		                                <div class="video" onclick="location.href='#'">
-		                                    <a href="#"><img src="${pageContext.request.contextPath }/resources/img/course/vid01.jpg" width="280px" alt="vid01"></a>                                 
-		                                    <p class="subject"><span class="category">${vo.cbCategory}</span><a href="#">${vo.cbTitle}</a></p>
-		                                    <p class="auth">관리자
-		                                        <span class="glyphicon glyphicon-comment" aria-hidden="true"><b>2</b></span>
-		                                        <span class="glyphicon glyphicon-eye-open" aria-hidden="true"><b>100</b></span>
-		                                    </p>
-		                                </div>
-		                            </div>
-		                        </td>
-<%-- 	                       </c:forEach> --%>
-                        </c:forEach> 
-                        
+                
+                   <c:forEach var="vo" varStatus="i" items="${courseList}">
+                       <c:if test="${i.count % 3 == 1}">
+                          <tr class="course"> 
+                       </c:if>    
+                              <td scope="col" class="text-center">
+                                  <div class="vid">                               
+                                      <div class="video" onclick="location.href='<c:url value="/courseBoard/detail?cbNum=${vo.cbNum}" />'">
+                                          <a href="<c:url value='/courseBoard/detail?cbNum=${vo.cbNum}' />">
+                                          <img src=
+                                    <c:set var="youcode" value="${vo.cbYouCode}" />
+                                    <c:set var="url" value="${fn:split(youcode, '/')}" />
+                              
+                                             <c:forEach var="you" begin="3" end="4" items="${url}" >
+                                    "https://img.youtube.com/vi/<c:out value="${you}" />/mqdefault.jpg"
+                                    </c:forEach>                                                                            
+                                          width="280px" alt="${you}"></a>                                 
+                                          
+                                          <p class="subject"><span class="category">${vo.cbCategory}</span><a href="<c:url value='/courseBoard/detail?cbNum=${vo.cbNum}' />">${vo.cbTitle}</a></p>
+                                          <p class="auth">관리자
+                                              <span class="glyphicon glyphicon-comment" aria-hidden="true"><b>2</b></span>
+                                              <span class="glyphicon glyphicon-eye-open" aria-hidden="true"><b>${vo.cbLookCount}</b></span>
+                                          </p>
+                                      </div>
+                                  </div>
+                              </td>                     
+                       <c:if test="${i.count % 3 == 0}">
+                           </tr>
+                        </c:if>
+                    </c:forEach> 
+                       
                         <%-- <td scope="col" class="text-center">
                             <div class="vid">                               
                                 <div class="video" onclick="location.href='/FRONT/views/board/course/course_detail.html'">
@@ -338,7 +347,7 @@
                                 </div>
                             </div>
                         </td>   --%>    
-                   </tr>                                 
+                                                    
                 </tbody>
               </table>
         </div>
@@ -370,27 +379,29 @@
     </div>
     
     <script defer>
- 	
-    	const msg = '${msg}';
-    	if(msg === 'registSuccess') {
-    		alert('정상 등록 처리되었습니다.');
-    	}
-    	
-		$(document).ready(function(){
-		      
-		      
-		      $('.vid').hover(function() {   
-		          $(this).css('background-color', 'rgb(0, 173, 181)');
-		          
-		      });
-		
-		      $('.vid').mouseleave(function() {   
-		          $(this).css('background-color', '#fff');
-		          
-		      });
-		
-		
-		  });
+    
+       const msg = '${msg}';
+       if(msg === 'registSuccess') {
+          alert('정상 등록 처리되었습니다.');
+       } else if(msg === 'deleteSuccess') {
+          alert('삭제가 완료되었습니다.');
+       }
+       
+      $(document).ready(function(){
+            
+            
+            $('.vid').hover(function() {   
+                $(this).css('background-color', 'rgb(0, 173, 181)');
+                
+            });
+      
+            $('.vid').mouseleave(function() {   
+                $(this).css('background-color', '#fff');
+                
+            });
+      
+      
+        });
       
   </script>
 </body>

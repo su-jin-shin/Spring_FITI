@@ -36,7 +36,7 @@ CREATE SEQUENCE courseBoard_seq
 public class CourseBoardVO {
 	
 	private int cbNum;
-	private int mNum;
+	private int memberNum;
 	private String cbTitle;
 	private String cbContent;
 	private String cbYouCode;

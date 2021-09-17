@@ -58,7 +58,7 @@
 
             <!--main left-->
             <form action='<c:url value="/courseBoard/regist" />' id="registForm" method="POST">
-			<%-- <form action='<c:url value="/courseBoard/regist" />' id="registForm" method="POST" enctype="multipart/form-data"> --%>
+         <%-- <form action='<c:url value="/courseBoard/regist" />' id="registForm" method="POST" enctype="multipart/form-data"> --%>
                 <table>
                     <tr>
                         <td>종목</td>
@@ -76,8 +76,8 @@
                                 <option>골프</option>
                                 <option>스케이트</option>
                                 <option>기타</option>
-								<!--  
-								<option value="category">종목선택</option>                               
+                        <!--  
+                        <option value="category">종목선택</option>                               
                                 <option value="swimming">수영</option>
                                 <option value="badminton">배드민턴</option>
                                 <option value="squash">스쿼시</option>
@@ -96,7 +96,7 @@
                     <tr>
                         <td>작성자</td>
                         <td><input type="text" size="20" value="관리자" readonly></td>
-                        <!-- <td><input type="hidden" name="mNum" size="20" value="1"></td> --> <!-- 관리자번호 넣어줌 -->
+                        <!-- <td><input type="hidden" name="memberNum" size="20" value="1"></td> --> <!-- 관리자번호 넣어줌 -->
                     </tr>
 
                     <tr>
@@ -106,7 +106,7 @@
 
                     <tr>
                         <td>내용</td>
-                        <td><textarea id="cbContent" name="cbContent" cols="75" rows="15"></textarea></td>
+                        <td><textarea id="cbContent" name="cbContent" cols="75" rows="15" wrap="hard"></textarea></td>
                     </tr>
 
 
@@ -126,7 +126,7 @@
                         
                     </tr>
                 </table>
-			</form> 
+         </form> 
             
         </div>
 
@@ -139,28 +139,35 @@
     
     
 
-	<script>
-		$(function() { // start jQuery
-			
-			$('#registBtn').click(function() {
-				if($('#sports').val() === 'category') {
-					alert('종목을 선택해주세요.');
-					return;				
-				} else if($('#cbTitle').val().trim() === '') {
-					alert('제목을 입력해주세요');	
-					return;
-				} else if($('#cbYouCode').val().trim() === '') {
-					alert('youtube 주소를 입력해주세요');	
-					return;
-				} else {
-					$('#registForm').submit();				
-				}			
-			}); // 글 등록 검증 끝
-		
-		
-		}); // end jQuery
-		
-	</script>
+   <script>
+      $(function() { // start jQuery
+         
+         $('#registBtn').click(function() {
+            if($('#sports').val() === 'category') {
+               alert('종목을 선택해주세요.');
+               return;            
+            } else if($('#cbTitle').val().trim() === '') {
+               alert('제목을 입력해주세요.');   
+               return;
+            } else if($('#cbYouCode').val().trim() === '') {
+               alert('youtube 주소를 입력해주세요.');   
+               return;
+            } else {
+               $('#registForm').submit();            
+            }         
+         }); // 글 등록 검증 끝
+         
+         
+         
+         $('#cbContent').val().replace(/\n/g, "<br>")
+
+      
+      
+      }); // end jQuery
+      
+      
+      
+   </script>
    
 </body>
 
