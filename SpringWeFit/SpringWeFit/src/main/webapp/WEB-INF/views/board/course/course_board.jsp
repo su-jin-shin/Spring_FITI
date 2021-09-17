@@ -230,7 +230,7 @@
                               </td>                     
                        <c:if test="${i.count % 3 == 0}">
                            </tr>
-                        </c:if>
+                       </c:if>
                     </c:forEach> 
                        
                         <%-- <td scope="col" class="text-center">

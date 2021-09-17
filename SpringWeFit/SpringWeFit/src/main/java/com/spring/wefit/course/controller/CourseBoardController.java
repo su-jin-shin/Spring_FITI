@@ -51,10 +51,12 @@ public class CourseBoardController {
    
    @GetMapping("/detail")
    public String courseDetail(@RequestParam int cbNum, Model model) {
-      
+      	  
 	  service.upHit(cbNum);
 	  
       model.addAttribute("article", service.getContent(cbNum));
+      System.out.println(service.getContent(cbNum).getCbLookCount());
+      
       
       return "board/course/course_detail";
       
